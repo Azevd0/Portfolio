@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Projetos</title>
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="shortcut icon" href="imagem/Papirus-Team-Papirus-Devices-Computer-laptop.512.png" type="image/x-icon">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">Portfólio</div>
+            <ul class="nav-links">
+                <li><a href="#apresentacao">Sobre mim</a></li>
+                <li><a href="#projects-grid">Meus Projetos</a></li>
+                <li><a href="#certificates-grid">Certificados</a></li>
+                <li> <a href="https://github.com/Azevd0" target="_blank"> <img src="imagem/top-icons/icons8-github-30.png" alt="GitHub_link" class="icon"></a> </li>
+                <li> <a href="https://www.linkedin.com/in/davyson-arthur-1429b4307/" target="_blank"> 
+                        <img src="imagem/top-icons/icons8-linkedin-30.png" alt="LinkedIn_link" class="icon"></a> 
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <div class="header-content">
+           <h1>Olá! <br> Meu nome é Davyson Arthur. <br>Seja bem vindo ao meu Portfólio!</h1>
+           <p class="tech-list-header">Java (JDK 8,11,17+) | Spring Boot | PostgreSQL | Docker | HTML5 | CSS3 | JavaScript</p>
+           <div class="tech-icons">
+                <img src="imagem/tech-icons/icons8-logo-java-coffee-cup-96.png" alt="Java" class="tech-icon java">
+                <img src="imagem/tech-icons/icons8-logotipo-da-primavera-96.png" alt="Spring Boot" class="tech-icon spring">
+                <img src="imagem/tech-icons/icons8-postgresql-96.png" alt="PostgreSQL" class="tech-icon postgres">
+                <img src="imagem/tech-icons/icons8-docker-96.png" alt="Docker" class="tech-icon docker">
+                <img src="imagem/tech-icons/icons8-html-5-96.png" alt="HTML5" class="tech-icon html">
+            <img src="imagem/tech-icons/icons8-css3-96.png" alt="CSS3" class="tech-icon css">
+            <img src="imagem/tech-icons/icons8-javascript-96.png" alt="JavaScript" class="tech-icon js">
+            </div>
+        </div>
+    </header>
+
+    
+
+    <div class="container">
+        <section class="apresentacao" id="apresentacao">
+            <div class="ap-content">
+                <h2>Sobre mim</h2>
+                <p>Olá! Sou <strong>Davyson Arthur</strong>, Desenvolvedor FullStack focado em Back-end com Java e Spring Boot. Construo APIs Rest integradas ao PostgreSQL/H2 Database e faço a conteinerização de microsserviços com Docker. Tenho também conhecimento de Front-end com JavaScript para desenvolvimento web com HTML e CSS. Estou em constante aprendizado e gosto de desafios que me ajudem a crescer profissionalmente.</p>
+            </div>
+        </section>
+
+        <h1 class="project-title">Meus Principais Projetos</h1>
+        
+        <div class="projects-grid" id="projects-grid">
+            
+            <div class="project-card">
+                <div>
+                    <h3>🏡 API REST de Imobiliária</h3>
+                    <p>API RESTful completa para gestão de inquilinos, imóveis e aluguéis. Inclui lógica de negócio para identificar e listar aluguéis atrasados.</p>
+                    
+                    <ul class="tech-list">
+                        <li>Java 17</li>
+                        <li>Spring Boot 3.3.3</li>
+                        <li>Spring Data JPA</li>
+                        <li>H2 Database</li>
+                        <li>PostgreSQL</li>
+                        <li>Springdoc</li>
+                        <li>Docker</li>
+                    </ul>
+                </div>
+                
+                <div class="buttons-container">
+                    <a href="https://github.com/Azevd0/Projeto-Imobiliaria" target="_blank" class="btn">
+                        Ver Código (GitHub)
+                    </a>
+                    <a href="http://localhost:8080/swagger-ui/index.html" class="btn btn-secondary">
+                        Documentação Swagger
+                    </a>
+                    <a href="https://hub.docker.com/r/azevd0/imobiliariapp/tags" target="_blank" class="btn btn-secondary">
+                        Imagem no Docker
+                    </a>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div>
+                    <h3>📱 API REST de Celulares e Marcas</h3>
+                    <p>Desenvolvimento de um sistema de cadastro e gerenciamento de celulares e marcas.</p>
+                    
+                    <ul class="tech-list">
+                        <li>Java 11</li>
+                        <li>Spring Boot 2.7.14</li>
+                        <li>Spring Data JPA</li>
+                        <li>PostgreSQL</li>
+                        <li>H2 Database</li>
+                        <li>Springdoc</li>
+                        <li>Docker</li>
+                    </ul>
+                </div>
+                
+                <div class="buttons-container">
+                    <a href="https://github.com/Azevd0/Cadastro-de-Celulars-e-Marcas-com-Spring-Boot" target="_blank" class="btn">
+                        Ver Código (GitHub)
+                    </a>
+                    <a href="http://localhost:8080/swagger-ui/index.html" class="btn btn-secondary">
+                        Documentação Swagger
+                    </a>
+                    <a href="https://hub.docker.com/r/azevd0/cellphoneapi/tags" target="_blank" class="btn btn-secondary">
+                        Imagem no Docker
+                    </a>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div>
+                    <h3>📚 Biblioteca Particular</h3>
+                    <p>Desenvolvimento de uma biblioteca com Maven, permitindo cadastro e listamento de itens como livros, revistas e álbuns musicais.</p>
+                    
+                    <ul class="tech-list">
+                        <li>Java 17</li>
+                        <li>Maven</li>
+                        <li>JPA</li>
+                        <li>Hibernate</li>
+                        <li>PostgreSQL</li>
+                    </ul>
+                </div>
+                
+                <div class="buttons-container">
+                    <a href="https://github.com/Azevd0/BiblioBancoFuctura/tree/main" target="_blank" class="btn">
+                        Ver Código (GitHub)
+                    </a>
+                    <a href="#" class="btn btn-secondary hidden-placeholder">
+                        &nbsp;
+                    </a>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div>
+                    <h3>🎲 Sistema de Rolagem de dados de D&D</h3>
+                    <p>Desenvolvimento de um sistema básico de Java que consiste em realizar jogadas de dados do famoso sistema de RPG/Role Play Gaming, Dungeons & Dragons</p>
+                    
+                    <ul class="tech-list">
+                        <li>Java 17</li>
+                        <li>Programação Orientada a Objetos</li>
+                    
+                    </ul>
+                </div>
+                
+                <div class="buttons-container">
+                    <a href="https://github.com/Azevd0/Dungeons-Dragons" target="_blank" class="btn">
+                        Ver Código (GitHub)
+                    </a>
+                    <a href="#" class="btn btn-secondary hidden-placeholder">
+                        &nbsp;
+                    </a>
+                </div>
+            </div>
+            
+            
+        </div>
+        <h1>Meus Certificados</h1>
+        
+            <div class="certificates-grid" id="certificates-grid">
+                <div class="certificate-card">
+                    <img src="imagem/certificates/Certificado JS.png" alt="Certificado de JavaScript" class="certificate-image">
+                    <div>
+                        <h3>Certificado de conclusão do curso de JavaScript pelo Curso em Video</h3>
+                    </div>
+                    <a href="certificados/Javascripts-Certificado-Curso-em-Video.pdf" target="_blank" class="btn">Ver Certificado</a>
+                </div>
+            
+                <div class="certificate-card">
+                    <img src="imagem/certificates/Certificado Docker.png" alt="Certificado de Docker" class="certificate-image">
+                    <div>
+                        <h3>Certificado de conclusão do curso de Docker pela DIO</h3>
+                    </div>
+                    <a href="certificados/DockerBasico.pdf" target="_blank" class="btn">Ver Certificado</a>
+                </div>
+            </div>
+        
+        <p class="footer-text">
+            &copy; 2026 Davyson. Todos os direitos reservados. 
+        </p>
+
+        
+
+    </div>
+
+</body>
+</html>
