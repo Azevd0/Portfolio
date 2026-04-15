@@ -23,7 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
 		certificatesGrid.scrollBy({ left: step, behavior: 'smooth' });
 	});
 
-	// Optional: enable keyboard arrow navigation when focus is inside the carousel
 	certificatesGrid.addEventListener('keydown', (e) => {
 		if (e.key === 'ArrowLeft') prevBtn.click();
 		if (e.key === 'ArrowRight') nextBtn.click();
