@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meus Projetos</title>
+    <title>Meus Portfólio</title>
     <link rel="stylesheet" href="estilo/style.css">
     <link rel="shortcut icon" href="imagem/Papirus-Team-Papirus-Devices-Computer-laptop.512.png" type="image/x-icon">
 </head>
@@ -25,11 +25,13 @@
     <header>
         <div class="header-content">
            <h1>Olá! <br> Meu nome é Davyson Arthur. <br>Seja bem vindo ao meu Portfólio!</h1>
-           <p class="tech-list-header">Java (JDK 8,11,17+) | Spring Boot | PostgreSQL | Docker | HTML5 | CSS3 | JavaScript</p>
+           <p class="tech-list-header">Java & Spring Boot | Spring Security | PostgreSQL | Redis | Docker | HTML5 | CSS3 | JavaScript</p>
            <div class="tech-icons">
                 <img src="imagem/tech-icons/icons8-logo-java-coffee-cup-96.png" alt="Java" class="tech-icon java">
                 <img src="imagem/tech-icons/icons8-logotipo-da-primavera-96.png" alt="Spring Boot" class="tech-icon spring">
+                <img src="imagem/tech-icons/Springsecurity--Streamline-Simple-Icons.png" alt="Spring Security" class="tech-icon spring-security">
                 <img src="imagem/tech-icons/icons8-postgresql-96.png" alt="PostgreSQL" class="tech-icon postgres">
+                <img src="imagem/tech-icons/icons8-redis-64.png" alt="Redis" class="tech-icon redis">
                 <img src="imagem/tech-icons/icons8-docker-96.png" alt="Docker" class="tech-icon docker">
                 <img src="imagem/tech-icons/icons8-html-5-96.png" alt="HTML5" class="tech-icon html">
             <img src="imagem/tech-icons/icons8-css3-96.png" alt="CSS3" class="tech-icon css">
@@ -44,18 +46,72 @@
         <section class="apresentacao" id="apresentacao">
             <div class="ap-content">
                 <h2>Sobre mim</h2>
-                <p>Olá! Sou <strong>Davyson Arthur</strong>, Desenvolvedor FullStack focado em Back-end com Java e Spring Boot. Construo APIs Rest integradas ao PostgreSQL/H2 Database e faço a conteinerização de microsserviços com Docker. Tenho também conhecimento de Front-end com JavaScript para desenvolvimento web com HTML e CSS. Estou em constante aprendizado e gosto de desafios que me ajudem a crescer profissionalmente.</p>
+                <p>Meu nome é Davyson Arthur e sou Desenvolvedor Back-end focado em criar soluções sólidas com Java e Spring Boot. Acredito que um bom software nasce da união entre código limpo e infraestrutura inteligente — por isso, busco ir além da simples codificação, integrando Banco de Dados relacionais e Cache para garantir a performance e escalabilidade que sistemas modernos exigem. Minha experiência conta também com conteinerização de microsserviços via Docker e Docker Compose, que me permite entregar ambientes consistentes. Aplico diariamente os princípios de Clean Code e as melhores práticas de design de software para garantir que cada API construída seja funcional e de fácil manutenção. Atualmente, foco na construção de arquiteturas seguras e de alta disponibilidade, sempre buscando transformar desafios técnicos em soluções eficientes que agreguem valor real ao negócio e à experiência do usuário</p>
             </div>
         </section>
 
         <h1 class="project-title">Meus Principais Projetos</h1>
         
         <div class="projects-grid" id="projects-grid">
+
+            <div class="project-card">
+                <div>
+                    <h3>🍽️ Order Factory</h3>
+                    <p>Aplicação robusta e escalável, para gerenciamento de restaurante. O sistema permite registro de usuários e autenticação, possuindo restrição de acesso para administradores. O sistema permite lançar pedidos, adicionar comidas à mesas, registrar pagamento e consultar histórico de lançamento e financeiro da API. Para evitar sobrecargas ao banco de dados, a aplicação conta com cache do Redis executado em segundo plano via Docker Compose, tornando consultas mais rápidas e eficientes.</p>
+                    
+                    <ul class="tech-list">
+                        <li>Java 17</li>
+                        <li>Spring Boot</li>
+                        <li>Spring Security</li>
+                        <li>H2 Database</li>
+                        <li>PostgreSQL</li>
+                        <li>Springdoc</li>
+                        <li>Redis</li>
+                        <li>Docker Compose</li>
+                    </ul>
+                </div>
+                
+                <div class="buttons-container">
+                    <a href="https://github.com/Azevd0/OrderFactory" target="_blank" class="btn">
+                        Ver Código (GitHub)
+                    </a>
+                    <a href="http://localhost:9090/swagger-ui/index.html" target="_blank" class="btn btn-secondary">
+                        Documentação Swagger
+                    </a>
+                    
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div>
+                    <h3>💵 Gestor de Finanças</h3>
+                    <p>Solução completa para gestão de finanças pessoais ou empresariais. A aplicação é executada via terminal e permite registrar receitas e despesas, listar finanças por mês e categoria e gerar relatórios financeiros, exibindo para o usuário o quanto teve de lucro mensal.
+                    </p>
+                    <p>A aplicação conta com duas versões: uma para desktop e outra levemente ajustada para dispositivos móveis que possuam um terminal (o Termux por exemplo).</p>
+                    
+                    <ul class="tech-list">
+                        <li>Java 21</li>
+                        <li>JPA</li>
+                        <li>Hibernate</li>
+                        <li>Maven</li>
+                        <li>PostgreSQL</li>
+                    </ul>
+                </div>
+                
+                <div class="buttons-container">
+                    <a href="https://github.com/Azevd0/Gestor-de-Financas" target="_blank" class="btn">
+                        Versão para Desktop
+                    </a>
+                    <a href="https://github.com/Azevd0/Gestor-de-Financas-mobile-" target="_blank" class="btn btn-secondary">
+                        Versão para Telemóvel
+                    </a>
+                </div>
+            </div>
             
             <div class="project-card">
                 <div>
-                    <h3>🏡 API REST de Imobiliária</h3>
-                    <p>API RESTful completa para gestão de inquilinos, imóveis e aluguéis. Inclui lógica de negócio para identificar e listar aluguéis atrasados.</p>
+                    <h3>🏡 Gestão Imobiliária</h3>
+                    <p>API RESTful desenvolvida para gestão de inquilinos, imóveis e aluguéis. Inclui lógica de negócio para registro de inquilino e atribuição de aluguéis em seu nome, permitindo identificar e listar aluguéis atrasados.</p>
                     
                     <ul class="tech-list">
                         <li>Java 17</li>
@@ -72,7 +128,7 @@
                     <a href="https://github.com/Azevd0/Projeto-Imobiliaria" target="_blank" class="btn">
                         Ver Código (GitHub)
                     </a>
-                    <a href="http://localhost:8080/swagger-ui/index.html" class="btn btn-secondary">
+                    <a href="http://localhost:8080/swagger-ui/index.html" target="_blank" class="btn btn-secondary">
                         Documentação Swagger
                     </a>
                     <a href="https://hub.docker.com/r/azevd0/imobiliariapp/tags" target="_blank" class="btn btn-secondary">
@@ -83,8 +139,8 @@
             
             <div class="project-card">
                 <div>
-                    <h3>📱 API REST de Celulares e Marcas</h3>
-                    <p>Desenvolvimento de um sistema de cadastro e gerenciamento de celulares e marcas.</p>
+                    <h3>📱 Estoque de Telemóveis</h3>
+                    <p>Desenvolvimento de um sistema de cadastro e gerenciamento de celulares e marcas, podendo realizar consultas e atualizações de estoque.</p>
                     
                     <ul class="tech-list">
                         <li>Java 11</li>
@@ -101,7 +157,7 @@
                     <a href="https://github.com/Azevd0/Cadastro-de-Celulars-e-Marcas-com-Spring-Boot" target="_blank" class="btn">
                         Ver Código (GitHub)
                     </a>
-                    <a href="http://localhost:8080/swagger-ui/index.html" class="btn btn-secondary">
+                    <a href="http://localhost:8080/swagger-ui/index.html" target="_blank" class="btn btn-secondary">
                         Documentação Swagger
                     </a>
                     <a href="https://hub.docker.com/r/azevd0/cellphoneapi/tags" target="_blank" class="btn btn-secondary">
@@ -160,50 +216,26 @@
         </div>
         <h1>Meus Certificados</h1>
         
+        <div class="carousel-container">
+            <button class="carousel-btn carousel-btn-left" id="prevBtn">&#10094;</button>
             <div class="certificates-grid" id="certificates-grid">
                 <div class="certificate-card">
                     <img src="imagem/certificates/Certificado JS.png" alt="Certificado de JavaScript" class="certificate-image">
-                    <div>
-                        <h3>Certificado de conclusão do curso de JavaScript pelo Curso em Video</h3>
-                        <ul class="tech-list">
-                            <li>JavaScript</li>
-                            <li>DOM</li>
-                            <li>Eventos</li>
-                            <li>functions</li>
-                            <li>Páginas web interativas</li>
-                        </ul>
-                    </div>
                     <a href="certificados/Javascripts-Certificado-Curso-em-Video.pdf" target="_blank" class="btn">Ver Certificado</a>
                 </div>
             
                 <div class="certificate-card">
                     <img src="imagem/certificates/Certificado Docker.png" alt="Certificado de Docker" class="certificate-image">
-                    <div>
-                        <h3>Certificado de conclusão do curso de Docker pela DIO</h3>
-                        <ul class="tech-list">
-                            <li>Linux</li>
-                            <li>Gerenciamento de imagens</li>
-                            <li>ambientes containerizados</li>
-                        </ul>
-                    </div>
                     <a href="certificados/DockerBasico.pdf" target="_blank" class="btn">Ver Certificado</a>
                 </div>
 
                 <div class="certificate-card">
                     <img src="imagem/certificates/Certificado Java.png" alt="Certificado de Java" class="certificate-image">
-                    <div>
-                        <h3>Certificado de conclusão do curso de Java pela Fuctura Tecnologia</h3>
-                        <ul class="tech-list">
-                            <li>Java</li>
-                            <li>Spring Boot</li>
-                            <li>PostgreSQL</li>
-                            <li>TypeScript</li>
-                            <li>Angular</li>
-                        </ul>
-                    </div>
                     <a href="certificados/Certificado-Java-fuctura.pdf" target="_blank" class="btn">Ver Certificado</a>
                 </div>
             </div>
+            <button class="carousel-btn carousel-btn-right" id="nextBtn">&#10095;</button>
+        </div>
         
         <p class="footer-text">
             &copy; 2026 Davyson. Todos os direitos reservados. 
@@ -213,5 +245,7 @@
 
     </div>
 
+    <script src="config/script.js"></script>
+    <script src="config/certs.js"></script>
 </body>
 </html>

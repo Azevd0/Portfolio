@@ -181,7 +181,14 @@ header p {
     transform: translateY(-6px) scale(1.05);
     transition: all 0.3s ease;
 }
-
+.tech-icon.redis:hover { 
+    background: rgba(255, 52, 52, 0.258) !important; 
+    box-shadow: 0 0 25px rgba(255, 66, 66, 0.55); 
+}
+.tech-icon.spring-security:hover { 
+    background: rgba(121, 250, 0, 0.236) !important; 
+    box-shadow: 0 0 25px rgba(121, 250, 0, 0.5); 
+}
 .tech-icon.java:hover { 
     background: rgba(248, 152, 29, 0.2) !important; 
     box-shadow: 0 0 25px rgba(248, 152, 29, 0.5); 
@@ -326,19 +333,56 @@ header p {
     display: inline-block;
 }
 
-.certificates-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
-    margin-bottom: 40px;
-    display: flex; 
-    flex-direction: column;
+.carousel-container {
+    display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.carousel-btn {
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.carousel-btn:hover {
+    transform: scale(1.1);
+}
+
+.carousel-btn:active {
+    transform: scale(0.95);
+}
+
+.certificates-grid {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    margin-bottom: 0;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px 0;
+    flex: 1;
+    scrollbar-width: none;
+}
+
+.certificates-grid::-webkit-scrollbar {
+    display: none;
 }
 
 .certificate-card {
-    width: 55%;
+    width: 300px;
+    min-width: 300px;
     background: linear-gradient(135deg,#1d1d1d,#2f2f2f);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
@@ -364,15 +408,13 @@ header p {
 }
 
 .certificate-card .btn {
-    margin: 15px 20px 20px 20px;
-    width: 30%;
-    text-align: center;
-    font-weight: bold;
+    margin: 15px auto 20px;
+    display: inline-block;
 }
 
 .certificate-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(255, 0, 255, 0.19);
+    box-shadow: 0 8px 25px rgba(255, 0, 255, 0.129);
 }
 
 .certificate-card h3 {
@@ -388,8 +430,12 @@ header p {
 }
 
 @media (max-width: 1047px) {
-    .certificate-card{
-        width: 80%;
+    .certificate-card {
+        width: 250px;
+        min-width: 250px;
+    }
+    .carousel-btn {
+        font-size: 2rem;
     }
 }
 
@@ -407,11 +453,24 @@ header p {
     }
     
     .certificate-card {
-        width: 75%;
+        width: 200px;
+        min-width: 200px;
+        box-sizing: border-box;
     }
-    .certificate-card .btn{
-        width: 50%;
+    .certificate-card .btn {
+        width: auto;
+        max-width: 140px;
+        padding: 8px 12px;
+        font-size: 0.85rem;
+        margin: 10px auto 15px;
+        display: block;
+        box-sizing: border-box;
     }
+    .carousel-btn {
+        
+        font-size: 2rem;
+    }
+
     @media (max-width: 580px) {
         .tech-icons {
         gap: 1rem;

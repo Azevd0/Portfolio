@@ -23,4 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
             localStorage.setItem('theme', 'dark');
         }
     });
+
+    // carousel logic moved to config/certs.js to avoid conflicts
 });
