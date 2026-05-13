@@ -57,15 +57,15 @@
             <div class="project-card">
                 <div>
                     <h3>🍽️ Order Factory</h3>
-                    <p>Aplicação robusta e escalável, para gerenciamento de restaurante. O sistema permite registro de usuários e autenticação, possuindo restrição de acesso para administradores. O sistema permite lançar pedidos, adicionar comidas à mesas, registrar pagamento e consultar histórico de lançamento e financeiro da API. Para evitar sobrecargas ao banco de dados, a aplicação conta com cache do Redis executado em segundo plano via Docker Compose, tornando consultas mais rápidas e eficientes.</p>
+                    <p>Aplicação desenvolvida para gerenciamento de restaurante. O sistema permite registro de usuários e autenticação, possuindo restrição de acesso para administradores. O sistema permite lançar pedidos, adicionar comidas à mesas, registrar pagamento e consultar histórico de vendas e relatório financeiro da empresa. Os dados são armazenados em cache pelo Redis e persistidos no PostgreSQL, ambos executados em ambiente de contêiner, garantindo ambiente consistente e de alta performance.</p>
                     
                     <ul class="tech-list">
-                        <li>Java 17</li>
+                        <li>Java 21</li>
                         <li>Spring Boot</li>
                         <li>Spring Security</li>
-                        <li>H2 Database</li>
+                        <li>Dockerfile</li>
                         <li>PostgreSQL</li>
-                        <li>Springdoc</li>
+                        <li>GraalVM</li>
                         <li>Redis</li>
                         <li>Docker Compose</li>
                     </ul>
@@ -119,8 +119,8 @@
                         <li>Spring Data JPA</li>
                         <li>H2 Database</li>
                         <li>PostgreSQL</li>
-                        <li>Springdoc</li>
-                        <li>Docker</li>
+                        <li>GraalVM</li>
+                        <li>Dockerfile</li>
                     </ul>
                 </div>
                 
@@ -140,28 +140,23 @@
             <div class="project-card">
                 <div>
                     <h3>📱 Estoque de Telemóveis</h3>
-                    <p>Desenvolvimento de um sistema de cadastro e gerenciamento de celulares e marcas, podendo realizar consultas e atualizações de estoque.</p>
+                    <p>Desenvolvimento de um sistema de cadastro e gerenciamento de celulares e marcas, podendo realizar consultas e atualizações de estoque. A API também permite a venda de telemóveis, imprimindo recibos e gerando relatórios de vendas.</p>
                     
                     <ul class="tech-list">
                         <li>Java 11</li>
                         <li>Spring Boot 2.7.14</li>
                         <li>Spring Data JPA</li>
-                        <li>PostgreSQL</li>
                         <li>H2 Database</li>
                         <li>Springdoc</li>
-                        <li>Docker</li>
                     </ul>
                 </div>
                 
                 <div class="buttons-container">
-                    <a href="https://github.com/Azevd0/Cadastro-de-Celulars-e-Marcas-com-Spring-Boot" target="_blank" class="btn">
+                    <a href="https://github.com/Azevd0/GestorDeTelemoveis" target="_blank" class="btn">
                         Ver Código (GitHub)
                     </a>
                     <a href="http://localhost:8080/swagger-ui/index.html" target="_blank" class="btn btn-secondary">
                         Documentação Swagger
-                    </a>
-                    <a href="https://hub.docker.com/r/azevd0/cellphoneapi/tags" target="_blank" class="btn btn-secondary">
-                        Imagem no Docker
                     </a>
                 </div>
             </div>
